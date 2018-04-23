@@ -3,7 +3,7 @@ package com.http.testtcprpc.provider;
 import com.http.testtcprpc.common.SayHelloService;
 
 /*
- * 服务端的服务实现
+ * 鏈嶅姟绔殑鏈嶅姟瀹炵幇
  * */
 public class SayHelloServiceImpl implements SayHelloService {
 

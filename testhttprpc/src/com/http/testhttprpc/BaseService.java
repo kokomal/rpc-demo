@@ -6,7 +6,7 @@ package com.http.testhttprpc;
 import java.util.Map;
 
 /**
- * @Description: 基础服务接口 
+ * @Description: 鍩虹鏈嶅姟
  **/
 public interface BaseService {
 

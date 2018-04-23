@@ -4,15 +4,15 @@
 package com.http.testhttprpc;
 
 /**
- * @Description: json½á¹û¼¯ 
+ * @Description: jsonç»“æœé›†
  **/
 public class JsonResult {
 
-	//½á¹û×´Ì¬Âë
+	// ç»“æœçŠ¶æ€ç 
 	private int resultCode;
-	//×´Ì¬Âë½âÊÍÏûÏ¢
+	// çŠ¶æ€ç è§£é‡Šæ¶ˆæ¯
 	private String message;
-	//½á¹û
+	// ç»“æœå¯¹è±¡
 	private Object result;
 	
 	public int getResultCode() {

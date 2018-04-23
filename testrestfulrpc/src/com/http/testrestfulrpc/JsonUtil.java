@@ -10,10 +10,7 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.map.ObjectMapper;
 
 /**
- * @Description: json°ïÖúÀà 
- * @Author chenkangxian   
- * @Date 2013-6-24 ÏÂÎç8:47:31 
- * @Copyright: 2012 chenkangxian, All rights reserved.
+ * @Description: jsonå¸®åŠ©ç±» 
  **/
 public class JsonUtil {
 
@@ -22,10 +19,10 @@ public class JsonUtil {
 	public static Object jsonToObject(String json, Class cls) {
 
 		try{
-			//ÔÊĞíjson´®ÀïÃæµÄkey value²»´øË«ÒıºÅ
+			// å…è®¸jsonä¸²é‡Œé¢çš„key valueä¸å¸¦åŒå¼•å·
 			mapper.configure(org.codehaus.jackson.JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
 
-			// ÔÊĞíÖÆ¶¨µÄobjectÖĞµÄÊôĞÔÃ»ÓĞjson´®ÖĞÄ³¸ökey
+			// å…è®¸åˆ¶å®šçš„objectä¸­çš„å±æ€§æ²¡æœ‰jsonä¸²ä¸­æŸä¸ªkey
 			mapper.configure(org.codehaus.jackson.map.DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
 			return mapper.readValue(json, cls);

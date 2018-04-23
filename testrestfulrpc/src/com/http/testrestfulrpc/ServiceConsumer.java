@@ -27,13 +27,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 /**
- * @Description: ·şÎñÏû·ÑÕß 
- * @Author chenkangxian   
- * @Date 2013-7-13 ÏÂÎç5:13:10 
- * @Copyright: 2012 chenkangxian, All rights reserved.
+ * @Description: æœåŠ¡æ¶ˆè´¹è€… 
  **/
 /*
- * ÇëÇóurl
+ * è¯·æ±‚url
  * http://localhost:8080/testrestfulrpc/consumer.json
  */
 @Controller
@@ -43,7 +40,7 @@ public class ServiceConsumer {
 	@RequestMapping(value="/consumer", method=RequestMethod.GET)
 	public JsonResult consume() throws ClientProtocolException, IOException{
 		
-		//²ÎÊı
+		//å‚æ•°
 		String service = "sayhelloservice";
 		String format = "json";
 		String arg1 = "hello";
@@ -54,7 +51,7 @@ public class ServiceConsumer {
 		
 		String url = "http://localhost:8080//testrestfulrpc/provider/" + service + "/" + nowStr + "." + format ;
 
-		//×é×°ÇëÇó
+		//ç»„è£…è¯·æ±‚
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpPost httpPost = new HttpPost(url);
 		
@@ -62,7 +59,7 @@ public class ServiceConsumer {
 		params.add(new BasicNameValuePair("arg1", arg1));
 		httpPost.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 
-		//½ÓÊÕÏìÓ¦
+		//æ¥æ”¶å“åº”
 		HttpResponse response = httpClient.execute(httpPost);
 
 		HttpEntity entity = response.getEntity();

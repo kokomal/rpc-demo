@@ -6,10 +6,7 @@ package com.http.testserialization;
 import java.util.Date;
 
 /**
- * @Description: ÈËµÄÊôĞÔ¼¯ºÏ 
- * @Author chenkangxian   
- * @Date 2013-6-25 ÏÂÎç4:45:59 
- * @Copyright: 2012 chenkangxian, All rights reserved.
+ * @Description: äººçš„å±æ€§é›†åˆ 
  **/
 class Person implements java.io.Serializable{
 	

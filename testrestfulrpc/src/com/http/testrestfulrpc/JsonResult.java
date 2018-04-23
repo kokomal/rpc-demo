@@ -6,19 +6,16 @@ package com.http.testrestfulrpc;
 import javax.xml.bind.annotation.XmlRootElement; 
 
 /**
- * @Description: json½á¹û¼¯ 
- * @Author chenkangxian   
- * @Date 2013-6-24 ÏÂÎç8:33:24 
- * @Copyright: 2012 chenkangxian, All rights reserved.
+ * @Description: jsonç»“æœé›† 
  **/
 @XmlRootElement(name="JsonResult")
 public class JsonResult {
 
-	//½á¹û×´Ì¬Âë
+	// ç»“æœçŠ¶æ€ç 
 	private int resultCode;
-	//×´Ì¬Âë½âÊÍÏûÏ¢
+	// çŠ¶æ€ç è§£é‡Šæ¶ˆæ¯
 	private String message;
-	//½á¹û
+	// ç»“æœ
 	private Object result;
 	
 	public int getResultCode() {

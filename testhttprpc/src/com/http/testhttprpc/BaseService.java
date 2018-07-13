@@ -6,7 +6,7 @@ package com.http.testhttprpc;
 import java.util.Map;
 
 /**
- * @Description: åŸºç¡€æœåŠ¡
+ * @Description: »ù´¡·şÎñ
  **/
 public interface BaseService {
 
